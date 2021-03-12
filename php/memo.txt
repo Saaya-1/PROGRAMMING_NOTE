@@ -228,3 +228,29 @@ if (preg_match("/\A\d{3}[-]\d{4}\z/", $zip)){
 } else {
     print('※郵便番号を123-4567の形式でご記入ください');
 }
+
+＜剰余算＞
+あまりを計算する。
+
+「1~31日までの曜日の繰り返し方」
+<?php
+$week = array('月','火','水','木','金','土','日');
+for ($i=1; $i<31; $i++){
+print($week[$i%7]."\n");
+}
+?>
+
+「一行ごとにセルの色を変える」
+    <?php
+    for($i=1; $i<=10; $i++){
+        if ($i % 2){
+            print('<tr style="background-color:#ccc">');
+        } else {
+            print('<tr>');
+        }
+        print('<td>' . $i . '行目</td');
+        print('</tr>');
+        }
+    ?>
+
+

@@ -1,0 +1,19 @@
+<ORDER BY> 並び方を変える
+Ascending 昇順　ASC　　※元々orderbyはasc表示なので省略可
+Descendig 降順　DESC
+
+<DISTINCT> 重複をなくす
+SELECT DISTINCT(カラム名)
+
+<BETWEEN>　〜の間
+WHERE　price　BETWEEN 50 AND 149;
+= WHERE price >= 50 AND price < 150
+
+<IN> ＝OR  同じカラムに対して複数の条件を指定する場合
+SELECT * FROM my_items WHERE id IN (1,3)
+= SELECT * FROM my_items WHERE id=1 OR id=3
+
+<LIMIT>　何件表示するか制限する
+SELECT * FROM carts LIMIT 2 , 3
+※,で区切る場合は、2件目からから３件表示するの意味になる
+
