@@ -1,0 +1,14 @@
+文の途中で次の行の先頭へ　command+enter
+新しいフォルダ作成  shift+command+n
+インデントを揃える　 shift+opption+f
+単語ごとに移動　ctrl＋矢印
+選択している単語と同じ単語を選択　ctl+d
+
+2つのファイルの差分を確認する方法
+コマンド + shift + P => compareと検索 => compare active file with… を選ぶ => 比較したいファイルを選ぶ => 今開いているファイルとの差を教えてくれる
+
+
+git-hubにあげた内容をブラウザ上でvscodeを開いて見る方法
+github.com => github1s.comに打ち変える
+
+https://github1s.com/Saaya-1/PROGRAMMING_NOTE

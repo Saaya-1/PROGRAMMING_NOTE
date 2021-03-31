@@ -1,0 +1,117 @@
+｜｜（パイプ）
+=> アロー
+floor()：切り捨てる
+ceil()：切り上げる
+round()：四捨五入
+
+
+【switch構文】
+swich ($x){
+    case 'japan';
+    case 'china';
+        echo 'asia';
+        break;
+}
+
+if構文で書くと↓
+
+if($x=='japan' || $x=='china'){
+
+}
+
+
+【CASEの種類】
+
+ABC = UPPER CASE
+abc = LOWER CASE
+
+大文字小文字の差が関係する
+case sensitive
+
+大文字小文字の差が関係ない
+case insensitive
+
+キャメルケース：$numberOfHours　（hisはキャメルケース利用）
+スネークケース：$number_of_hours
+ケバブケース：$number-of-hours
+
+
+【function】
+    functionを使う理由、ほかでも使いたいから。
+    returnされた後にも加工できる
+
+    caluculatePay(45,1000)
+    function caluculatePay($x.$y){
+    return $x * $y;
+}
+
+※$Z=Default値
+function caluculatePay($x, $y, $z = 0){
+}
+
+
+
+【一次元配列】
+$array = ['apple', 'banana', 'peach'];
+for ($i = 0; $i < count($array); $i++){
+    echo $array[$i];
+}
+
+foreach ($array as $fruit) {
+    echo $fruit;
+}
+
+
+【多次元配列】
+
+$array = [];
+$array[0] = ['A','B','c'];
+      [1] = ['D','E','F'];
+      [2] = ['G','H','I'];
+
+
+※配列のindexには文字列も入れれる
+$data['test] = 4;
+$data['test] = 6;
+
+
+
+
+【sprintf】
+%d = degit(整数)
+%s = string(文字列)
+%f = float(小数点あり)
+
+sprintf('%d', 49);
+sprintf('%02d', 49);  0→頭0埋め・2→2桁
+sprintf('%1.4f);  1→int 4→小数点4桁
+
+※sprintfの中で%を表示させたいときは%%で表示する。（エスケープ処理）
+
+
+
+Apache(PMA)
+DetaBase(MySQL)
+centOS
+
+
+varchar(10) 3文字の時でも10文字まで使う
+char(10) 3文字のときは4文字くらいまで使う
+varcharより読み込むのが早い。
+
+tinyint -127～128  0～255
+smallint -5～5
+int 
+egerbigint
+
+float(小数点あり)（5,2）　5のうち2桁が小数点、整数は3
+double(小数点第6位くらいから省かれちゃう)
+
+
+
+※調べるリスト
+
+FROM `` 予約語　エスケープ
+fetch_object
+sqlのおさらい
+Udemy朗報！

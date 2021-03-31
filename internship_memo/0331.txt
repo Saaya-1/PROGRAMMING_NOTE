@@ -1,0 +1,94 @@
+phpのセッションの保持期間
+1440s *　24 　=24分
+
+
+
+配列とobjectの違い
+
+
+int
+string
+float
+object 
+
+objectには配列と同じような箱がある
+
+配列： $test['id]
+object：　$test -> id;
+
+&:参照渡し pass by reference
+メモリの場所を渡しているから＝になる。
+
+objectは基本参照渡し
+
+
+
+
+Apatchのアクセスログにもgetは表示される
+inputtypeの submitはenterでとぶ。buttonはエンターではとばない。
+
+
+
+isset() 
+その数が定義されているかされていないかcheckしてtrueかfalseで返す。（ブーリアンタイプ）
+あるかないか。
+
+empty()
+空かどうか。
+数字の0はtrueになる。
+
+0を入力するフィールドではissetか$_POST['count']=="";
+strlenを使かって0になっているか見る。
+
+
+===
+type(int/string/boolean)
+
+※hisルールではboolean帰ってくる場合は===の比較演算子を使う。
+
+ファイルを読み込むとき。
+require：必須だからなかったらエラー。基本はrequire。
+require_once：1回しか読み込まない
+include：なくても進む
+
+
+
+INSERT INTO テーブル名（　　,   ,   ,   ,）※省略可能。省略した場合はdbの登録通り。普段は省略しない。
+VALUES（　　,　　,　　,　　,）
+
+" " 空文字。存在はしている。
+NULL　存在自体していない。
+
+$result checkは必要。
+
+
+
+イベント管理はカレンダーの誕生日登録。編集。削除等
+
+
+※課題
+（月給データのCRUDをつくる）CRUD:Create Read Update Delete
+
+pay.dev.his/
+c/home/pay/public/
+→できないならまずはディレクトリだけ新規作成する。
+
+(index.php)検索フォーム
+検索した一覧がでる
+編集するボタンもしくはリンクをつくる（元の内容が予め入力されている。編集できる→更新ボタン）updateされて一覧にもどる
+削除するボタンもしくはリンクをつくる（削除しますか。いいですかyes or noが必要）deleteされて一覧にもどる
+新規登録のリンクもつくる
+
+
+
+※調べるリスト
+$_GET/$_POSTのおさらい
+===
+!==
+%s
+
+
+
+
+テーブル化
+時給・働いた時間・月給
