@@ -1,0 +1,15 @@
+
+
+ ・ japascriptを書くときは <script></script>で挟む
+ ・ 'use strict';を書くとミスを指摘してくれる
+
+     document
+     .getElementById('target') ※(target)を取り込む
+     .addEventListener('click',() =>{してほしいこと}　※（click）をしたら（してほしいこと）を動作させる
+
+
+＜論理演算子＞
+ &&　なおかつ(and)
+ || もしくは（or)
+ !　 〜ではない(not)
+
